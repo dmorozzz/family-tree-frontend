@@ -77,7 +77,6 @@ function* createChildEffect(action: CreateChildRequestAction): Generator {
 
 function* updateChildEffect(action: UpdateMemberRequest): Generator {
   try {
-    console.log(action.payload);
     const response = yield call(
       updateMember,
       action.payload.props.id as string,

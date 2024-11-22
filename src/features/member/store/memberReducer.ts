@@ -52,7 +52,6 @@ function addChildrenToParent(
 function updateChild(members: Member[], updatedChild: Member): Member[] {
   return members.map((member) => {
     if (member.id === updatedChild.id) {
-      console.log(member, updatedChild);
       return { ...member, name: updatedChild.name, age: updatedChild.age };
     }
 
@@ -128,7 +127,6 @@ export function memberReducer(
       };
     }
     case CREATE_CHILD_SUCCESS: {
-      console.log(action.payload);
       return {
         ...state,
         isLoading: false,
