@@ -92,7 +92,6 @@ export default function Member() {
             variant="standard"
           />
           <TextField
-            autoFocus
             required
             margin="dense"
             id="age"

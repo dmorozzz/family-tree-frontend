@@ -118,7 +118,6 @@ export function MemberList(props: { members: Member[] }) {
             variant="standard"
           />
           <TextField
-            autoFocus
             required
             margin="dense"
             id="age"
@@ -176,7 +175,6 @@ export function MemberList(props: { members: Member[] }) {
             variant="standard"
           />
           <TextField
-            autoFocus
             required
             margin="dense"
             id="age"
